@@ -1,0 +1,7 @@
+# The Original is pymata's, under MakerWorld's Standard Digital File License: never commit or share it.
+reference/
+# Prototype meshes and scratch renders; rebuilt by the scripts.
+build/
+__pycache__/
+.venv/
+.DS_Store
