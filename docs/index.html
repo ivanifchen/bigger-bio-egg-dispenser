@@ -20,13 +20,18 @@
   .print p:last-child { margin-bottom: 0; }
   .note { margin-top: 28px; color: #5b6873; font-size: 0.95rem; }
   a { color: #0d6b78; }
+  model-viewer { width: 100%; height: auto; aspect-ratio: 3 / 2; display: block; border-radius: 12px; background: #eef1f6; --poster-color: transparent; }
+  .hint { margin: 6px 0 0; font-size: 0.9rem; text-align: center; opacity: 0.6; }
 </style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
 </head>
 <body>
 <main>
   <h1>Bigger Bio Egg Dispenser</h1>
   <p class="intro">A 16-egg remix of pymata's Bio Egg Dispenser, sized to a 16 in fridge shelf. Load eggs at the top front; they roll back, turn down, and roll forward to where you take them out. 389 mm long, 95 mm wide and 145 mm tall.</p>
-  <img src="img/hero.png" alt="Assembled cage of blue-grey lattice struts with two levels of rails">
+  <model-viewer src="egg_dispenser.glb" poster="img/hero.png" alt="Assembled cage of blue-grey lattice struts with two levels of rails" camera-controls auto-rotate
+    touch-action="pan-y" environment-image="neutral" shadow-intensity="1" camera-orbit="-60deg 70deg auto"></model-viewer>
+  <p class="hint">Drag to turn it, scroll or pinch to zoom.</p>
 
   <div class="grid">
     <div>
