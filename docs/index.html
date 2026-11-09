@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bigger Bio Egg Dispenser</title>
+<style>
+  body { margin: 0; background: #f6f8fa; color: #182129; font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { margin: 0; font-size: 2.4rem; }
+  .intro { color: #5b6873; margin: 4px 0 20px; }
+  img { width: 100%; display: block; border-radius: 12px; background: #e8edf2; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 32px; }
+  @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
+  .grid h2 { font-size: 1.1rem; margin: 10px 0 2px; }
+  .grid p { margin: 0; color: #5b6873; }
+  .print { margin-top: 40px; padding: 16px 20px; background: #e4eef1; border-radius: 12px; }
+  .print h2 { margin: 0 0 6px; font-size: 1.1rem; }
+  .print p { margin: 0 0 8px; }
+  .print p:last-child { margin-bottom: 0; }
+  .note { margin-top: 28px; color: #5b6873; font-size: 0.95rem; }
+  a { color: #0d6b78; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Bigger Bio Egg Dispenser</h1>
+  <p class="intro">A 16-egg remix of pymata's Bio Egg Dispenser, sized to a 16 in fridge shelf. Load eggs at the top front; they roll back, turn down, and roll forward to where you take them out. 389 mm long, 95 mm wide and 145 mm tall.</p>
+  <img src="img/hero.png" alt="Assembled cage of blue-grey lattice struts with two levels of rails">
+
+  <div class="grid">
+    <div>
+      <img src="img/levels.png" alt="View of the back of the cage, showing the two levels and the turn">
+      <h2>Two levels</h2>
+      <p>Both levels slope down 2.2°. Eggs load onto the upper rails at the front, roll to the back, drop through the turn onto the lower level, and roll forward to the exit cradle.</p>
+    </div>
+    <div>
+      <img src="img/seam.png" alt="Close-up of the seam and pin bosses">
+      <h2>Four pins, 14 contacts</h2>
+      <p>It prints as two halves. Four D-shaped pins press into bosses at the seam; only the rails, side guides and two waist lines cross it, leaving 14 small contacts. No glue, so it comes apart to wash.</p>
+    </div>
+    <div>
+      <img src="img/halves.png" alt="The two halves standing as they print">
+      <h2>Two prints</h2>
+      <p>The back and front halves print standing on their seam or back face, each about 195 mm tall. About 8.8 h and 150 g for the back half, 8.2 h and 133 g for the front on an X2D.</p>
+    </div>
+    <div>
+      <img src="img/coupon.png" alt="Fit coupon: two short seam pieces and four pins">
+      <h2>Fit coupon first</h2>
+      <p>A small test of two seam pieces and four pins. Try the 0.03, 0.05 and 0.08 mm fits and use the one that grips before printing a half.</p>
+    </div>
+  </div>
+
+  <div class="print">
+    <h2>Printing and files</h2>
+    <p>Start with <a href="egg_dispenser_fit_coupon_plate.3mf" download>egg_dispenser_fit_coupon_plate.3mf</a>. Then print the halves: <a href="egg_dispenser_back_plate.3mf" download>egg_dispenser_back_plate.3mf</a> (four pins plus two spares ride beside it) and <a href="egg_dispenser_front_plate.3mf" download>egg_dispenser_front_plate.3mf</a>.</p>
+    <p>Each is a Bambu Studio project for the X2D: Bambu PLA Matte, 0.20 mm layers, 3 walls, 10% gyroid, 8 mm brim, no supports. Open one, pick your AMS slot, slice and print.</p>
+    <p>No STEP: the lattice is generated as a mesh, so the 3MFs carry the exact geometry. Source and design notes are in the <a href="https://github.com/ivanifchen/bigger-bio-egg-dispenser">repository</a>; how the lattice is grown is explained <a href="explain/ExplainV1.html">here</a>.</p>
+  </div>
+
+  <p class="note">The cage is generated in the original's style: blending Voronoi struts around rails and continuous side guides. The side guides are 64 mm apart to keep Large and XL eggs crosswise, and the rails are the original's 4.3 mm. It holds 16 eggs at a 47 mm pitch and leaves 17 mm of the 406 mm shelf free.</p>
+</main>
+</body>
+</html>
